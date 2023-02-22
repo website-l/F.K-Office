@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+   
+    position: relative;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+}
+
+.car{
+    width: 55%;
+    position:absolute;
+    right: 50px;
+    bottom: 40px;
+    animation: run 2s linear 1;
+    
+
+}
+.content{
+    max-width: 600px;
+    margin-top: 50px;
+   align-items: center;
+}
+.content h1{
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content h5{
+  margin-top: 30px;
+    font-size: 27px;
+}
+.paragraph{
+    max-width: 600px;
+    margin-top: 70px;
+   align-items: center;
+}
+.paragraph p{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    text-shadow: 6px 6px blue;
+    max-width: 600px;
+    margin-top: 50px;
+   align-items: center;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 200px;
+}
+.menu{
+    width: 55%;
+    position:absolute;
+    height: max-contents;
+}
+@keyframes run{
+    0%{
+        transform: translate(-100px,-100px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+.icons {
+    display: flex;
+    position:absolute;
+     right: 50px;
+   
+    
+
+}
+.icons div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 50px;
+  
+}
+.icons img{
+    width: 40px;
+    height: 50px;
+}
+.features {
+    display: flex;
+    align-items: center;
+  }
+  
+  .feature {
+    width: 150px;
+    background-color: rgb(66, 83, 88);
+    color: white;
+    padding: 20px;
+    margin-left: 60px;
+    text-align: center;
+    margin-top: 50px;
+    animation: slide-in 1s ease-out forwards;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .whatsapp-btn-container{
+    position:fixed;
+    right: 20px;
+    bottom: -100px;
+    padding: 10px;
+    opacity: 0;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+  }
+  @keyframes fade-up{
+    100%{
+        bottom: 24px;
+        opacity: 1;
+    }
+  }
+  .whatsapp-btn-container .whatsapp-btn{
+    font-size: 40px;
+    color:#25d366;
+    display: inline-block;
+    transition: all 400ms;
+  }
+  .whatsapp-btn-container .whatsapp-btn:hover{
+    transform: scale(1.2);
+  }
+  
+  .whatsapp-btn-container .whatsapp-btn:hover {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+  }
+  .map{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  iframe{
+    width: 50%;
+    height: 50%;
+  }
